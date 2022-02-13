@@ -1,0 +1,210 @@
+<pieces>
+  <piece type="corner">
+    <wall type="top" value="1" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="1" />
+    <wall type="right" value="0" />
+    <wall type="front" value="1" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="corner">
+    <wall type="top" value="1" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="0" />
+    <wall type="right" value="1" />
+    <wall type="front" value="1" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="corner">
+    <wall type="top" value="1" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="0" />
+    <wall type="right" value="1" />
+    <wall type="front" value="0" />
+    <wall type="back" value="1" />
+  </piece>
+  <piece type="corner">
+    <wall type="top" value="1" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="1" />
+    <wall type="right" value="0" />
+    <wall type="front" value="0" />
+    <wall type="back" value="1" />
+  </piece>
+  <piece type="corner">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="1" />
+    <wall type="left" value="1" />
+    <wall type="right" value="0" />
+    <wall type="front" value="1" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="corner">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="1" />
+    <wall type="left" value="0" />
+    <wall type="right" value="1" />
+    <wall type="front" value="1" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="corner">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="1" />
+    <wall type="left" value="0" />
+    <wall type="right" value="1" />
+    <wall type="front" value="0" />
+    <wall type="back" value="1" />
+  </piece>  
+  <piece type="corner">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="1" />
+    <wall type="left" value="1" />
+    <wall type="right" value="0" />
+    <wall type="front" value="0" />
+    <wall type="back" value="1" />
+  </piece>
+  <piece type="edge">
+    <wall type="top" value="1" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="0" />
+    <wall type="right" value="0" />
+    <wall type="front" value="1" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="edge">
+    <wall type="top" value="1" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="0" />
+    <wall type="right" value="1" />
+    <wall type="front" value="0" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="edge">
+    <wall type="top" value="1" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="0" />
+    <wall type="right" value="0" />
+    <wall type="front" value="0" />
+    <wall type="back" value="1" />
+  </piece>
+  <piece type="edge">
+    <wall type="top" value="1" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="1" />
+    <wall type="right" value="0" />
+    <wall type="front" value="0" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="edge">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="1" />
+    <wall type="right" value="0" />
+    <wall type="front" value="1" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="edge">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="0" />
+    <wall type="right" value="1" />
+    <wall type="front" value="1" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="edge">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="0" />
+    <wall type="right" value="1" />
+    <wall type="front" value="0" />
+    <wall type="back" value="1" />
+  </piece>
+  <piece type="edge">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="1" />
+    <wall type="right" value="0" />
+    <wall type="front" value="0" />
+    <wall type="back" value="1" />
+  </piece>
+  <piece type="edge">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="1" />
+    <wall type="left" value="0" />
+    <wall type="right" value="0" />
+    <wall type="front" value="1" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="edge">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="1" />
+    <wall type="left" value="0" />
+    <wall type="right" value="1" />
+    <wall type="front" value="0" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="edge">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="1" />
+    <wall type="left" value="0" />
+    <wall type="right" value="0" />
+    <wall type="front" value="0" />
+    <wall type="back" value="1" />
+  </piece>
+  <piece type="edge">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="1" />
+    <wall type="left" value="1" />
+    <wall type="right" value="0" />
+    <wall type="front" value="0" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="center">
+    <wall type="top" value="1" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="0" />
+    <wall type="right" value="0" />
+    <wall type="front" value="0" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="center">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="1" />
+    <wall type="left" value="0" />
+    <wall type="right" value="0" />
+    <wall type="front" value="0" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="center">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="1" />
+    <wall type="right" value="0" />
+    <wall type="front" value="0" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="center">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="0" />
+    <wall type="right" value="1" />
+    <wall type="front" value="0" />
+    <wall type="back" value="0" />
+  </piece>
+  <piece type="center">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="0" />
+    <wall type="right" value="0" />
+    <wall type="front" value="0" />
+    <wall type="back" value="1" />
+  </piece>
+  <piece type="center">
+    <wall type="top" value="0" />
+    <wall type="bottom" value="0" />
+    <wall type="left" value="0" />
+    <wall type="right" value="0" />
+    <wall type="front" value="1" />
+    <wall type="back" value="0" />
+  </piece>
+</pieces>
