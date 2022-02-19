@@ -4,12 +4,21 @@ using OpenTK.Mathematics;
 
 namespace Rubiks.Cubes
 {
+    enum PieceType
+    {
+        Center = 1, Edge = 2, Corner = 3
+    }
     class Piece
     {
-        public float[] vertices { get; set; }
-        public uint[] indicies { get; set; }
-        public Piece(Vector3[] colors, Vector3 position, float size)
+        public Vector3 Center { get; set; }
+        public PieceType PieceType { get; set; }
+        public Notation[] WallTypes { get; set; }
+        public List<(Vector3 Pos, Vector3 Color)> Vectors { get; set; } = new List<(Vector3 Pos, Vector3 Color)>();
+        public Piece(Vector3[] colors, Vector3 position, float size, Notation[] wallTypes)
         {
+            Center = position;
+            PieceType = (PieceType)wallTypes.Length;
+            this.WallTypes = wallTypes;
             Vector3[] offsets =
             {
                 Vector3.Add(position, new Vector3(0.0f, size, 0.0f)),
@@ -36,26 +45,46 @@ namespace Rubiks.Cubes
                 Matrix3.Identity, // back
             };
 
-            var verts = new List<float>();
-            var inds = new List<uint>();
-            uint counter = 0;
             for (int i = 0; i < offsets.Length; i++)
             {
                 foreach (var w in wall)
                 {
                     Vector3 t = Vector3.Add(w * transforms[i], offsets[i]);
-                    verts.AddRange(new float[] {
-                        t.X, t.Y, t.Z, colors[i].X, colors[i].Y, colors[i].Z
-                    });
+                    Vectors.Add((new Vector3(t.X, t.Y, t.Z), new Vector3(colors[i].X, colors[i].Y, colors[i].Z)));
                 }
-                inds.AddRange(new uint[] {
-                    counter, counter+1, counter+3, 
-                    counter+1, counter+2, counter+3 
+            }
+        }
+        public float[] GetVertices()
+        {
+            List<float> vertices = new List<float>();
+            foreach (var v in Vectors)
+            {
+                vertices.AddRange(new float[] {
+                    v.Pos.X, v.Pos.Y, v.Pos.Z, v.Color.X, v.Color.Y, v.Color.Z
+                });
+            }
+            return vertices.ToArray();
+        }
+        public uint[] GetIndicies()
+        {
+            List<uint> indicies = new List<uint>();
+            uint counter = 0;
+            foreach (var v in Vectors)
+            {
+                indicies.AddRange(new uint[] {
+                    counter, counter+1, counter+3,
+                    counter+1, counter+2, counter+3
                 });
                 counter += 4;
             }
-            vertices = verts.ToArray();
-            indicies = inds.ToArray();
+            return indicies.ToArray();
+        }
+        public void UpdateCenter()
+        {
+            var sum = new Vector3(0.0f);
+            foreach (var v in Vectors)
+                sum = Vector3.Add(sum, v.Pos);
+            Center = sum / Vectors.Count;
         }
     }
 }
